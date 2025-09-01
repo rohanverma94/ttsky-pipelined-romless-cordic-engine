@@ -2,7 +2,7 @@
 
 The Pico acts as an SPI master, sending test angles to the FPGA and reading back computed sine and cosine values for verification against expected results.
 
-## Prepare bitsream and upload to ULX3S
+## Prepare bitstream and upload to ULX3S
 ```bash
 make clean
 make
