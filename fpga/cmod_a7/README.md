@@ -12,12 +12,14 @@ For the example, we are going to use linux supported SPI devices i.e. vaaman or 
 
 ### Pin assignments:
 
-| Pin    | FPGA Pin |
-|--------|----------|
-|`sclk`  |   PIO1   |
-|`mosi`  |   PIO2   |
-|`miso`  |   PIO3   |
-|`cs_n`  |   PIO4   |
+| Pin    | FPGA Pin | Vaaman Pin |
+|--------|----------|------------|
+|`sclk`  |   PIO1   |      7     |
+|`mosi`  |   PIO2   |     29     |
+|`miso`  |   PIO3   |     31     |
+|`cs_n`  |   PIO4   |     33     |
+
+![CMOD A7 connections with vaaman](image.jpg)
 
 ### Running the Test
 
