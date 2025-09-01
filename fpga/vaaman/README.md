@@ -1,8 +1,13 @@
 ## Implementation of Romless Cordic on Vaaman 
 
-Vaaman is SBC from Vicarak.in it has Efinix Trion T120 FPGA along with Rockchip RK3399. [Crowd Supply](www.crowdsupply.com/vicharak/vaaman)
+Vaaman is SBC from [Vicharak.in](https://vicharak.in/) it has Efinix Trion T120 FPGA along with Rockchip RK3399. [Crowd Supply](www.crowdsupply.com/vicharak/vaaman) 
 
 
+
+
+<p align="center">
+  <img src="vaaman.JPG" alt="Vaaman SBC" width="800"/>
+</p>
 
 
 ### What you need:
@@ -10,41 +15,22 @@ Vaaman is SBC from Vicarak.in it has Efinix Trion T120 FPGA along with Rockchip 
 - You will need a dummy SPI device in your Linux kernel (e.g., `/dev/spidev1.0`, here 1 is bus and 0 is device).
 
 
-Here are hte steps you can use for creatign the dummy SPI.
+Here are the steps you can follow for creating the dummy SPI.
 
  ### Enable spidev on VAAMAN
  
- To enable `spidev` on your `Vaaman boards`, do as per the below instructions. **I will soon push it with the kernel updates.**
- 
-     * Resources: [rk3399-vaaman-spi2-dev.dtbo.disabled.gz](https://github.com/user-attachments/files/21556984/rk3399-vaaman-spi2-dev.dtbo.disabled.gz)
- 
-     * Prerequisite: gzip: `sudo apt install gzip`
- 
- 
-     1. Use the following command on your Vaaman board  ** (Please add your GH access token)**
- 
- 
- ```
- wget --header="Authorization: token <YOUR_PERSONAL_ACCESS_TOKEN>" --header="Accept: application/octet-stream" https://github.com/user-attachments/files/21556984/rk3399-vaaman-spi2-dev.dtbo.disabled.gz -O rk3399-vaaman-spi2-dev.dtbo.disabled.gz
-```
-
-    2. Unzip it.
+ To enable `spidev` on your `Vaaman boards`, do as per the below instructions. 
+    
+1. Run
+     `sudo apt update  `
+2. `sudo apt upgrade `
 
 
-```
-gzip -d rk3399-vaaman-spi2-dev.dtbo.disabled.gz
-```
+3. `sudo apt install linux-headers-5.10.238 linux-image-5.10.238-vaaman linux-libc-dev`
 
-    3. Copy it to your overlays dir.
+4. Use `vicharak-config` to enable `[ ] Enable SPI 2 [dummy dev] Controller on 40-Pin GPIO`
 
-
-```
-sudo cp rk3399-vaaman-spi2-dev.dtbo.disabled /boot/overlays-$(uname -r)
-```
-
-    4. Use `vicharak-config` to enable `[ ] Enable SPI 2 [dummy dev] Controller on 40-Pin GPIO`
-
-    5. `sudo reboot`
+5. `sudo reboot`
 
 
 #### Pin assignments:
@@ -56,3 +42,7 @@ sudo cp rk3399-vaaman-spi2-dev.dtbo.disabled /boot/overlays-$(uname -r)
 |`miso`|31|L15 - 31|
 |`cs_n`|33|L18 - 33|
 --------------------------------------------------------------------------------------------
+
+Thank You 
+Regards 
+Deepak Sharda 

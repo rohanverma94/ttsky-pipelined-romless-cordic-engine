@@ -20,7 +20,7 @@ The development of this ROM-Less CORDIC engine was made possible by the engineer
 Cordic-16 is a ROM Less cordic implementation with 16 bit signed fixed point input-Q3.16  (1 sign bit 3 integer bits and 12 fraction bits). This core comprises of (i) a single stage CORDIC Engine that operates in rotation mode for computing $cos$ and $sin$ of input angle $\theta$, and (ii) an $arctan$ generator that generates the micro-rotation angles dynamically in each clock cycle for the corresponding iteration.
 
 <p align="center">
-  <img src="Block_Diagram.png" alt="Block Diagarm of the ROM-less CORDIC Engine" width="800"/>
+  <img src="./_asset/Block_Diagram.png" alt="Block Diagarm of the ROM-less CORDIC Engine" width="800"/>
 </p>
 <p align="center"><em>Figure 1: Block Diagarm of the ROM-less CORDIC Engine</em></p>
    
@@ -57,7 +57,7 @@ Note that, the CORDIC core performs rotation only in Quadrant 1 and 4 (Q1 & Q4) 
 As said, micro-rotation angles were genearted using Taylor's series approximation, it is found that the mean absolute error between actual and computed value is found to be $0.003$ for $1000$ samples. This was evaluated using MATLAB, below figure shows the approximation of computed value over the actual results.
 
 <p align="center">
-  <img src="MATLAB_comparison_result.png" alt="Comparision of actual and computed value" width="800"/>
+  <img src="./_asset/MATLAB_comparison_result.png" alt="Comparision of actual and computed value" width="800"/>
 </p>
 <p align="center"><em>Figure 2: Comparision of actual and computed value</em></p>
 
