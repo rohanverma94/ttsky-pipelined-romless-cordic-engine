@@ -2,6 +2,11 @@
 
 The Pico acts as an SPI master, sending test angles to the FPGA and reading back computed sine and cosine values for verification against expected results.
 
+<p align="center">
+  <img src="misc/board_connections.png" alt="Block Diagarm of the ROM-less CORDIC Engine" width="800"/>
+  </p>
+<p align="center"><em>Hardware connections from ulx3s-85f to Raspbery Pi Pico</em></p>
+   
 ## Prepare bitstream and upload to ULX3S
 ```bash
 make clean
@@ -20,11 +25,7 @@ Connect the Raspberry Pi Pico to the ULX3S as follows:
 | CS_N       | 25       | Pin 5                | GP5              | SPI Chip Select   |
 | RST_N       | PWR Btn  | N/A                  | N/A            | Design's Reset tied to PWR Btn |
 
-<p align="center">
-  <img src="misc/board_connections.png" alt="Block Diagarm of the ROM-less CORDIC Engine" width="800"/>
-  </p>
-<p align="center"><em>Hardware connections from ulx3s-85f to Raspbery Pi Pico</em></p>
-   
+
 ## Overview
 - **Communication Protocol:**  
   - SPI is used on the Pico with the following pins:
