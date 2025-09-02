@@ -1,6 +1,6 @@
 ## Implementation of Romless Cordic on Vaaman 
 
-Vaaman is SBC from [Vicharak.in](https://vicharak.in/) it has Efinix Trion T120 FPGA along with Rockchip RK3399. [Crowd Supply](www.crowdsupply.com/vicharak/vaaman) 
+Vaaman is SBC from [Vicharak.in](https://vicharak.in/) it has an Efinix Trion T120 FPGA along with a Rockchip RK3399. [Crowd Supply](www.crowdsupply.com/vicharak/vaaman) 
 
 
 
@@ -43,6 +43,6 @@ Here are the steps you can follow for creating the dummy SPI.
 |`cs_n`|33|L18 - 33|
 --------------------------------------------------------------------------------------------
 
-Thank You 
-Regards 
+Thank You
+Regards
 Deepak Sharda 
