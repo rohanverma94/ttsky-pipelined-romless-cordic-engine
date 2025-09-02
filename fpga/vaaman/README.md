@@ -1,6 +1,6 @@
 ## Implementation of Romless Cordic on Vaaman 
 
-Vaaman is SBC from [Vicharak.in](https://vicharak.in/) it has an Efinix Trion T120 FPGA along with a Rockchip RK3399. [Crowd Supply](www.crowdsupply.com/vicharak/vaaman) 
+[Vaaman](https://www.crowdsupply.com/vicharak/vaaman) is SBC from [Vicharak.in](https://vicharak.in/) it has an Efinix Trion T120 FPGA along with a Rockchip RK3399. 
 
 
 
@@ -10,7 +10,7 @@ Vaaman is SBC from [Vicharak.in](https://vicharak.in/) it has an Efinix Trion T1
 </p>
 
 
-### What you need:
+### Required :
 - All the wires should be of identical lengths. 
 - You will need a dummy SPI device in your Linux kernel (e.g., `/dev/spidev1.0`, here 1 is bus and 0 is device).
 
@@ -20,18 +20,21 @@ Here are the steps you can follow for creating the dummy SPI.
  ### Enable spidev on VAAMAN
  
  To enable `spidev` on your `Vaaman boards`, do as per the below instructions. 
-    
-1. Run
-     `sudo apt update  `
-2. `sudo apt upgrade `
 
+```bash 
+sudo apt update  
 
-3. `sudo apt install linux-headers-5.10.238 linux-image-5.10.238-vaaman linux-libc-dev`
+sudo apt upgrade 
 
-4. Use `vicharak-config` to enable `[ ] Enable SPI 2 [dummy dev] Controller on 40-Pin GPIO`
+sudo apt install linux-headers-5.10.238 linux-image-5.10.238-vaaman linux-libc-dev
 
-5. `sudo reboot`
+```
 
+ Use `vicharak-config` to enable `[ ] Enable SPI 2 [dummy dev] Controller on 40-Pin GPIO`
+
+```bash 
+sudo reboot
+```
 
 #### Pin assignments:
 
