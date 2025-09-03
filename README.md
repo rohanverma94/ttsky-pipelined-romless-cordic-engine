@@ -8,8 +8,9 @@ This ROM-less cordic engine is written for [Tiny Tapeout SKY25a shuttle](https:/
 - [Check 3D render of silicon here](https://gds-viewer.tinytapeout.com/?process=SKY130&model=https%3A%2F%2Frohanverma94.github.io%2Fttsky-romless-cordic-engine%2F%2Ftinytapeout.gds)
 
 ## Specification
-- Tile area: 334.88um x 225.76um
-- Stdcell count: 2612
+- Tile area: 334.88um x 225.76um	
+- Stdcell count: 4042 total cells (excluding fill and tap cells)
+- Routing utilization : 41.216 %
 - Max Clk freq supported by design: 50 MHz
 - No. of inputs: 3 
   - SCLK
