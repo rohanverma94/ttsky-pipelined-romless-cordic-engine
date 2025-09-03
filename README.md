@@ -24,15 +24,17 @@ This ROM-less cordic engine is written for [Tiny Tapeout SKY25a shuttle](https:/
 </p>
 <p align="center"><em>2D render for the ROM-less CORDIC Engine</em></p>
 
-## Team
+## Our Team
 
 [Rohan Sundar](https://github.com/rsundar), [Rohan Verma](https://github.com/rohanverma94/) 
 and [Jyotinder Singh](https://github.com/JyotinderSingh)
 
-We learnt a lot while laying out foundational ideas for implementing math processors on ASIC. [Rohan Sundar](https://github.com/rsundar) was instrumental in simplifying math for the CORDIC engine which effectively made it ROM-less, while **Vicharak's engineering team** came up with the synthesizable and well-tested RTL design which work very well with open-source tools.
+While building the foundation for math processors on ASIC, we learnt a lot. 
+
+[Rohan Sundar](https://github.com/rsundar) and [Kasetty Praveen Kumar](https://github.com/Kasetty-Praveen-Kumar) were instrumental in simplifying the CORDIC engine’s math to enable a ROM-less design, while [Vicharak Team](#Vicharak's-Engineering-Team) engineered a good synthesizable RTL that has been thoroughly tested and integrates beautifully with open-source tools.
 
 
-**Vicharak's Engineering Team**   
+## Vicharak's Engineering Team   
 [Devang Kabutarwala](https://github.com/djkabutar),
 [Kasetty Praveen Kumar](https://github.com/Kasetty-Praveen-Kumar),
 [Rishik Ram Jallarapu](https://github.com/Marcvi19),
@@ -40,4 +42,9 @@ We learnt a lot while laying out foundational ideas for implementing math proces
 [Tejas Dabhankar](https://github.com/tejdabhankar),
 [Akshar Vastarpara](https://github.com/akshar001)
 
-### Special thanks to Vicharak's engineering team for bringing expertise on mathematics, RTL design and testbench simulations. This tapeout was not possible without their generous help and hard work.
+
+## 🙏 Acknowledgment
+
+Huge thanks to [**Vicharak's Engineering Team**](https://vicharak.in) 🏆   for their expertise in **mathematics, RTL design, and testbench simulations**. 
+
+This tapeout simply wouldn’t have been possible without their hard work and support.
