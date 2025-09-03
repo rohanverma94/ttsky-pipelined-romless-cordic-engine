@@ -31,8 +31,9 @@ and [Jyotinder Singh](https://github.com/JyotinderSingh)
 
 While building the foundation for math processors on ASIC, we learnt a lot. 
 
-[Rohan Sundar](https://github.com/rsundar) and [Kasetty Praveen Kumar](https://github.com/Kasetty-Praveen-Kumar) were instrumental in simplifying the CORDIC engine’s math to enable a ROM-less design, while [Vicharak Team](#Vicharak's-Engineering-Team) engineered a good synthesizable RTL that has been thoroughly tested and integrates beautifully with open-source tools.
+[Vicharak Team](#Vicharak's-Engineering-Team) engineered a good synthesizable RTL that has been thoroughly tested and integrates beautifully with open-source tools. 
 
+[Rohan Sundar](https://github.com/rsundar) and [Kasetty Praveen Kumar](https://github.com/Kasetty-Praveen-Kumar) were instrumental in simplifying the CORDIC engine’s math to enable a ROM-less design. A special mention to [Rishik Ram Jallarapu](https://github.com/Marcvi19) for his dedicated contributions in verification, GDS generation, and gate-level simulations.
 
 ## Vicharak's Engineering Team   
 [Devang Kabutarwala](https://github.com/djkabutar),
@@ -46,5 +47,7 @@ While building the foundation for math processors on ASIC, we learnt a lot.
 ## 🙏 Acknowledgment
 
 Huge thanks to [**Vicharak's Engineering Team**](https://vicharak.in) 🏆   for their expertise in **mathematics, RTL design, and testbench simulations**. 
+
+Thanks to Matthew Venn, Uri Shaked and whole Tiny Tapeout team for answering our queries related to ASIC.
 
 This tapeout simply wouldn’t have been possible without their hard work and support.
