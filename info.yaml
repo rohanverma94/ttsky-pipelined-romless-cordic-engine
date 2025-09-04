@@ -2,7 +2,7 @@
 project:
   title:        "ROM-less Cordic Engine"      # Project title
   author:       "Rohan Sundar, Rohan Verma and Jyotinder Singh"      # Your name
-  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  discord:      "always_ff_rohan"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "A ROM-less cordic engine that utilizes SPI-slave interface to receive four 16-bit inputs (atan₀, alpha, x, y) and returns three 16-bit outputs (alpha, cosθ, sinθ)."      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     50000000       # Clock frequency in Hz (or 0 if not applicable)
